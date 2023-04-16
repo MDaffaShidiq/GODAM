@@ -352,6 +352,7 @@
 "Assets/Dinnerroom.cs"
 "Assets/dinnerroomkey.cs"
 "Assets/lightScript.cs"
+"Assets/menuscript.cs"
 "Assets/One-Click_Wall_Materials/Scenes/Misc/MaterialChanger.cs"
 "Assets/StarterAssets/FirstPersonController/Scripts/FirstPersonController.cs"
 "Assets/StarterAssets/InputSystem/StarterAssetsInputs.cs"
