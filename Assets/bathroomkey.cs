@@ -5,6 +5,7 @@ using UnityEngine;
 public class bathroomkey : MonoBehaviour
 {
     public GameObject inticon, key;
+    public AudioSource pickup;
 
     void OnTriggerStay(Collider other){
         if (other.CompareTag("MainCamera")){
@@ -13,6 +14,7 @@ public class bathroomkey : MonoBehaviour
                 key.SetActive(false);
                 Bathroom.keyfound = true;
                 inticon.SetActive(false);
+                pickup.Play();
 	        }
 	    }
     }

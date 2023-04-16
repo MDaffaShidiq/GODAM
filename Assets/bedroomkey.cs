@@ -5,6 +5,7 @@ using UnityEngine;
 public class bedroomkey : MonoBehaviour
 {
     public GameObject inticon, key;
+    public AudioSource pickup;
 
     void OnTriggerStay(Collider other){
         if (other.CompareTag("MainCamera")){
@@ -13,6 +14,7 @@ public class bedroomkey : MonoBehaviour
                 key.SetActive(false);
                 Bedroom.keyfound = true;
                 inticon.SetActive(false);
+                pickup.Play();
 	        }
 	    }
     }

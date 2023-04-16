@@ -5,6 +5,7 @@ using UnityEngine;
 public class dinnerroomkey : MonoBehaviour
 {
     public GameObject inticon, key;
+    public AudioSource pickup;
 
     void OnTriggerStay(Collider other){
         if (other.CompareTag("MainCamera")){
@@ -13,6 +14,7 @@ public class dinnerroomkey : MonoBehaviour
                 key.SetActive(false);
                 Dinnerroom.keyfound = true;
                 inticon.SetActive(false);
+                pickup.Play();
 	        }
 	    }
     }

@@ -22,7 +22,6 @@ public class Bathroom : MonoBehaviour
                         door_closed.SetActive(false);
                         door_opened.SetActive(true);
                         intText.SetActive(false);
-                        //open.Play();
                         StartCoroutine(repeat());
                         opened = true;
                     }
@@ -44,7 +43,7 @@ public class Bathroom : MonoBehaviour
         opened = false;
         door_closed.SetActive(true);
         door_opened.SetActive(false);
-        //close.Play();
+        close.Play();
     }
     void Update(){
         if(keyfound == true){
